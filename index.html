@@ -6,18 +6,35 @@
     <meta name="keywords" content="Moisés, Moisés Oliveira, Oliveira">
     <meta name="author" content="Moisés Oliveira"> 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Moisés Oliveira | Dev</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Moisés Oliveira | Dev</h1>
-        <div class="itens">
-            <a class="links" href="" id="contatoW">Contato WhatsApp</a>
-            <a class="links" href="" id="contatoEm">Contato Email</a>
-            <a class="links" href="" id="github">Projetos GitHub</a>
-            <a class="links" href="" id="services">Serviços</a>
-        </div>
+
+    <div class="body">
+      <div class="sidebar" id="sidebar">
+        <button class="closebtn" onclick="closeNav()">X</button>
+        <a class="links" href="" id="register">Criar Conta</a>
+        <a class="links" href="https://wa.me/5591985995809" id="contatoW">Contato WhatsApp</a>
+        <a class="links" href="https://www.tiktok.com/@moiss.oliveira.de6" id="contatoEm">Canal TikTok</a>
+        <a class="links" href="https://github.com/Moises-Oliveira-Developer" id="github">Projetos</a>
+        <a class="links" href="" id="services">Serviços</a>
+        <a href="">Orçamento</a>
+        <a href="">Opções de Planos</a>
+        <a href="">Suporte Técnico</a>
+      </div>
+    
+
+      <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
     </div>
+
+<h1 class="title">Moisés Oliveira | Dev</h1>
+  
 
     <div class="slides-container">
         <div class="Slides fade">
@@ -31,14 +48,20 @@
         <div class="Slides fade">
           <img class="img" src="IMG/Img.png">
         </div>
+
+        <div class="paragrafs">
+          <ul>
+            <li class="texts">Tenha um site criativo e seguro para seus clientes.</li>
+            <li class="texts">Veja até onde seu negócio pode chegar.</li>
+            <li class="texts">Entre em contato com o desenvolverdor e faça um orçamento.</li>
+            <li class="texts">Não perca tempo e faça com que sua loja seja reconhecida.</li>
+            <li class="texts">Melhore seu atendimento mostrando aos seus futuros clientes o que sua loja os oferece.</li>
+            <li class="texts">Com o site qualquer pessoa de qualquer lugar pode ter acesso a sua loja.</li>
+          </ul>
+        </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-
-
-
-
-
 <script src="script.js"></script>    
 </body>
 </html>

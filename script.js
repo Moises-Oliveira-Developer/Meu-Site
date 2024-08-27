@@ -10,10 +10,20 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 3000); // Muda a imagem a cada 3 segundos
+  setTimeout(showSlides, 3000);
 }
 
 function plusSlides(n) {
   slideIndex += n - 1;
   showSlides();
+}
+
+function openNav(){
+  document.getElementById("sidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav(){
+  document.getElementById("sidebar").style.width = "0px";
+  document.getElementById("main").style.marginLeft = "0px";
 }
